@@ -1,0 +1,6 @@
+.content{
+      width: 710px;
+      height: 710px;
+      background: var(--dark-400);
+      position: relative;
+}
