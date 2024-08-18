@@ -1,0 +1,46 @@
+.pager_content.friend:before{
+      top: 88px;
+}
+
+.wrapper_friends{
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 82px 82px 82px 82px;
+      gap: .5rem;
+}
+
+.friend_card,
+.friend_card a,
+.friend_card a img{
+      width: 82px;
+      height: 82px;
+      display: flex;
+      border-radius: .3rem;
+}
+
+.friend_card a{
+      position: relative;
+}
+
+.friend_card a:before{
+      content: attr(data-tooltip);
+      color: var(--second);
+      text-transform: uppercase;
+      background: var(--dark-400);
+      border-radius: 3px;
+      padding: .5rem 1rem;
+      box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+      left: 5%;
+      top: 75%;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s;
+      font-size: .9rem;
+}
+
+.friend_card a:hover:before{
+      opacity: 1;
+      visibility: visible;
+}
