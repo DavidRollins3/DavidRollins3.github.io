@@ -1,0 +1,84 @@
+.modal{
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,.8);
+      z-index: 1000;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: visible;
+}
+
+.modal.show{
+      animation: show_modal .3s ease-in-out forwards;
+}
+
+@keyframes show_modal{
+      100%{
+            opacity: 1;
+            visibility: visible;
+      }
+}
+
+.btn_close__modal{
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,.1);
+      border-radius: 50%;
+}
+
+.btn_close__modal *{
+      font-size: 2rem;
+      color: var(--light);
+      fill: var(--light);
+}
+
+.inner_modal{
+      width: 90%;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0);
+}
+
+.inner_modal.show{
+      animation: show_modal_inner .5s .2s ease-in-out forwards;
+}
+
+@keyframes show_modal_inner{
+      0%{
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0);
+      }
+      70%{
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.4);
+      }
+      100%{
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+      }
+}
+
+.inner_modal img{
+      width: initial;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+}
