@@ -1,0 +1,11 @@
+import { MdClose } from 'react-icons/md'
+import './buttons.css'
+
+const Close = ({close}) => {
+
+      return (
+            <button className="close_page" onClick={close}><MdClose /></button>
+      )
+}
+
+export default Close
