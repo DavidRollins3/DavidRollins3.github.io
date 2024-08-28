@@ -1,0 +1,121 @@
+/***
+Author: XtremeSportsHD
+Contact: @FDDavid20 (Twitter)
+Web: https://www.xtremesportshd.com/
+Date: January, 2017
+****/
+
+
+body {
+font-family: 'Muli', sans-serif; 
+margin: 0px;
+text-transform: uppercase;
+max-width: 100%px; height: 260px;
+}
+a{ color:#FFF; text-decoration: none;}
+p {
+margin-bottom:5px;
+}
+
+.clearout {
+height:20px;
+clear:both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:99999px;
+    margin:0px;
+    padding:0;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    position: relative;
+    overflow: hidden;
+    float:left;
+    padding: 0 1px;
+    width:1300px;
+    height: 245px;
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:-13px;
+    padding:5px;
+    cursor:pointer;
+    position:relative;
+    line-height:0;
+}
+.nbs-flexisel-item img {
+    max-width: 323px;
+    min-height: 230px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 4.5px;
+}
+
+.nbs-flexisel-item .play {
+    position: relative;
+    top:-200px; left:23px;
+    width:300px; height:270px; 
+    background: url(https://i.imgur.com/XZ3XikE.png);
+    opacity:0;
+}
+.nbs-flexisel-item .play:hover { 
+    background: url(https://i.imgur.com/XZ3XikE.png);
+    opacity:1;
+}
+.nbs-flexisel-item .fecha {
+    margin: -270px auto;
+    width: 325px; height: 220px;
+    line-height: 18px;
+    background: #202020;
+    color: #FFF;
+    font-size: 12px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 20px; height: 300px;  
+    line-height: 365px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    font-weight: bold;
+    text-align: center;
+    background: #202020;
+    color: #b13131;     
+}
+
+.nbs-flexisel-nav-left {
+    left: 0px;
+    background: url(https://i.imgur.com/eIWkS8M.png);
+    background-position: 0px 0px;
+}
+
+.nbs-flexisel-nav-left.disabled {
+    opacity: 0.4;
+    
+}
+
+.nbs-flexisel-nav-right {
+    right: 0px;    
+    background: url(https://i.imgur.com/eIWkS8M.png);
+    background-position: 220px 0px;
+}
+
+.nbs-flexisel-nav-right.disabled {
+    opacity: 0.4;
+}
