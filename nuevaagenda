@@ -1,0 +1,54 @@
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Player</title>
+      <link href="static/iframe.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+      <meta name="robots" content="noindex,nofollow">
+   </head>
+   <body class="directAc" style="">
+      <div id="DisplayContent">
+         <div id="PlayerDisplay">
+            <div class="wpw" style="background-image: linear-gradient(rgba(16, 16, 23, 0.71), #000000), url('https://image.tmdb.org/t/p/original/1HHp75V06ymY19lRqU7EPRv55Jt.jpg'); background-size: 100%; background-repeat: no-repeat;"></div>
+            <div class="SelectLangDisp">
+								<li onclick="SelLang(this, 'SUB');" class="SLD_A"><img src="static/lang/SUB.png"></li>
+			            </div>
+            <div class="OptionsLangDisp">
+               <div class="ODDIV">
+				                  <div class="OD OD_SUB REactiv">
+					                     <li onclick="go_to_player('https://r2.playflv.xyz/embed/aa0a9038-0674-4903-a33a-326b615cf616')">
+                        <img src="static/server/r2.playflv.xyz.png">
+                        <span>r2.playflv.xyz</span>
+                        <p>Subtitulado - Reproductor Rapído para moviles Max. 1 ventana emergent</p>
+                     </li>
+					                     <li onclick="go_to_player('https://anime-flv.xyz/?player=a9cc6694dc40736d7a2ec018ea566113')">
+                        <img src="static/server/anime-flv.xyz.png">
+                        <span>anime-flv.xyz</span>
+                        <p>Subtitulado - Descarga Directa | Max. 1 ventana emergente</p>
+                     </li>
+					                     <li onclick="go_to_player('https://filemoon.sx/e/tt2qvrstgxu8')">
+                        <img src="static/server/filemoon.sx.png">
+                        <span>filemoon.sx</span>
+                        <p>Subtitulado - Descarga Directa | Max. 2 ventana emergente</p>
+                     </li>
+					                     <li onclick="go_to_player('https://luluvdo.com/e/j863qcuqtygb')">
+                        <img src="static/server/luluvdo.com.png">
+                        <span>luluvdo.com</span>
+                        <p>Subtitulado - Player externo de terceros | Max. 3 ventanas emergentes</p>
+                     </li>
+					                  </div>
+				               </div>
+            </div>
+         </div>
+         <div class="FirstLoad"></div>
+         <div class="BotHumano"></div>
+         <div class="DisplayVideo"></div>
+      </div>
+      <script src="static/iframen.js"></script>
+<!-- Histats.com  START (html only)-->
+<a href="/viewstats/?SID=4840381&f=2" alt="contador de visitas gratis" target="_blank" ><div id="histatsC"><img border="0" src="//s4is.histats.com/stats/i/4840381.gif?4840381&103"></div></a>
+<!-- Histats.com  END  -->
+   </body>
+</html>
