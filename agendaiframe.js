@@ -2,12 +2,12 @@ function go_to_player(url) {
     document.querySelector(".BotHumano")
         .classList.add('BotHumanoA');
     document.querySelector(".BotHumano")
-        .insertAdjacentHTML('afterbegin', '<div class="BoxHumano"><span><b>Cargando Señal ■■■■■■■■■□ 90%</b> <p>Por favor espere unos segundos</p></span></div>');
+        .insertAdjacentHTML('afterbegin', '<div class="BoxHumano"><span><b>CARGANDO SEÑAL EN VIVO ■■■■□ 90%</b> <p>POR FAVOR ESPERE UNOS SEGUNDOS.</p></span></div>');
     var displayVideo = document.querySelector(".DisplayVideo");
     displayVideo.classList.add('DisplayVideoA');
     displayVideo.innerHTML = `
     <span onclick="listPlayer();">
-        <img src="/static/back.png">
+        <img src="https://png.pngtree.com/png-vector/20231116/ourmid/pngtree-back-icon-pointer-png-image_10541611.png">
     </span>
     <iframe onload='document.querySelector(".BotHumano").classList.remove("BotHumanoA")' id="IFR" src="` + url + `" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>`;
 }
