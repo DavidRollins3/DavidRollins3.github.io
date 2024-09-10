@@ -1,6 +1,6 @@
 :root {
 	--rojo: #E50914;
-	--fondo: #141414;
+	--fondo: #000000;
 }
 
 * {
@@ -15,12 +15,12 @@ body {
 }
 
 .contenedor {
-	width: 90%;
+	width: 85%;
 	margin: auto;
 }
 
 header {
-	padding: 30px 0;
+	padding: 14px 0;
 }
 
 header .contenedor {
@@ -39,7 +39,7 @@ header .logotipo {
 header nav a {
 	color: #AAA;
 	text-decoration: none;
-	margin-right: 20px;
+	margin-right: 18px;
 }
 
 header nav a:hover,
@@ -83,7 +83,7 @@ header nav a.activo {
 	background: rgba(0,0,0, 0.5);
 	border: none;
 	border-radius: 0.31em;
-	padding: 0.93em 1.87em;
+	padding: 0.85em 1.80em;
 	color: #fff;
 	margin-right: 1.25em;
 	cursor: pointer;
